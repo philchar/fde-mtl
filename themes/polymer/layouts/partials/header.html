@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
-  <title>{{ .Title }} - {{.Site.Title}}</title>
+  <title>{{ .Title }} - {{ .Site.Title}}</title>
   <script src="{{$baseurl}}/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
   <link rel="stylesheet" href="{{$baseurl}}/technology/technology.css">
   <link rel="import" href="{{$baseurl}}/technology/technology.html">
@@ -238,61 +238,6 @@
     margin-left: -10px;
     marign-right: 5px;
   }
-
-  .talks {
-    margin-right: 10px;
-    padding-right: 10px;
-  }
-  .talks iron-image {
-    width: 32px;
-    height: 32px;
-    margin-left: 15px;
-  }
-
-  /* Video Automation in video-recording.html */
-  .automation-logo {
-    width: 40%;
-  }
-  .automation-info {
-    width: 60%;
-    font-size: 54px;
-    padding-right: 7%;
-    padding-left: 1%;
-    text-align: center;
-    border-left: 1px solid #fff;
-  }
-  .automation-top {
-    padding-top: 60px;
-    font-size: 38px;
-  }
-  .automation-bottom {
-    padding-bottom: 60px;
-    font-size: 38px;
-  }
-  .automation-middle {
-    font-size: 60px;
-  }
-  .automation-info .twitter {
-    font-size: 32px;
-    color: #aaa;
-  }
-  .automation-info .tagline {
-    font-size: 24px;
-    line-height: 45px;
-    color: #777
-  }
-  .automation-sponsors {
-    text-align: center;
-    padding: 12% 5%;
-  }
-  .automation-sponsors h1 {
-    color: #777;
-  }
-  .automation-sponsors iron-image {
-    width: 250px;
-    height: 150px;
-    margin: 25px;
-  }
   </style>
 
 </head>
@@ -302,7 +247,7 @@
     <paper-header-panel drawer>
       <paper-toolbar class="sidenav tall">
         <iron-image class="profile middle" sizing="contain" src="{{$baseurl}}/{{.Site.Params.profile}}"></iron-image>
-        <div class="bottom">Golang Montréal</div>
+        <div class="bottom">{{ i18n "orgname_short" }}</div>
       </paper-toolbar>
 
       <paper-menu>
@@ -327,7 +272,7 @@
         <paper-icon-button class="hamburger" icon="menu" paper-drawer-toggle></paper-icon-button>
 
         <div class="flex main-title">
-          <a href="{{$baseurl}}/{{$lang}}"><iron-image class="title-logo" src="/images/gomtl-logo-128.png" sizing="contain"></iron-image></a>&nbsp;<a href="{{$baseurl}}/{{$lang}}">{{.Site.Title}}</a>
+          <a href="{{$baseurl}}/{{$lang}}"><iron-image class="title-logo" src="/images/logo.png" sizing="contain"></iron-image></a>&nbsp;<a href="{{$baseurl}}/{{$lang}}">{{ i18n "orgname_short" }}</a>
         </div>
 
 

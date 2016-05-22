@@ -1,8 +1,6 @@
 ---
-quicklinks:
- - about
 slug: a-propos
-date: 2016-01-13T02:21:00-05:00
+date: 2016-05-22T12:21:00-05:00
 title: À propos
 menu:
   main:
@@ -10,61 +8,31 @@ menu:
 
 ---
 
-### What is Go
+Famille, Développement et Éducation (FDE) est un organisme à but non lucratif affilié à
+[Family Development Canada](http://www.familydevelopment.ca/) et à l'[International Federation for Family Development](http://iffd.org), une ONG ayant [statut consultatif général](https://en.wikipedia.org/wiki/Consultative_status#General) auprès des [Nations Unies](http://www.un.org)
 
-[Go](https://golang.org) est un langage de programmation open-source développé
-par Google. Il a été conçu d'abord et avant tout pour être simple.  C'est un
-langage compilé, fortement typé, gestion automatique de la mémoire,
-d'excellentes primitives de concurrence et une robuste librairie standard.  Go
-compile ultra rapidement et compile pour toutes les plateformes en une commande.
-Avec Go, on obtient les performances de C/C++ avec l'aisance de développement de
-Python (à l'exception du GIL :P).
+FDE dispense des cours offerts aux couples pour améliorer leur capacités parentales, familiales et conugales.
 
-Voir aussi [Go by example](https://gobyexample.com/) et le
-[Go book](https://www.golang-book.com/) (en anglais).
+Pour plus de quatre décennies maintenant, des dizaines de milliers de couples partout à travers le monde ont profité de ces cours.
 
+FDE Montréal organise ces cours dans la grande région de Montréal.
 
-### Mission
+<!--
 
-Golang Montréal a pour mission de promouvoir la croissance d'une communauté
-vivante et dynamique d'utilisateurs de Go à Montréal.
+References:
+http://www.fe-ny.org/Family_Enrichment_NY/About_us.html
+http://www.familydevelopment.ca/mission/
 
-Golang Montréal vise à diffuser la connaissance du langage et à encourager
-l'utilisation.
+-->
 
-Golang Montréal promeut les Logiciels Libres, encourage les contributions aux
-projets Open Source et publie ses logiciels et productions sous des licenses
-libres.
+### Conseil d'administration
 
+Le conseil d'administration est composé de:
 
-### Activités
+* Frédérick Gaudreau & Valérie Blouin
+* Philippe Charron & Marie-Pierre Gagné
+* Elie Bou-Assi & Mélina Daher
+* Michelle Chartrand & Alexandre Bourget
 
-Nous tenons des rencontres régulières qui comprennent une série de présentations
-courtes suivies d'une présentation principale.
-
-L'entrée est libre et ouverte à tous. Nos commanditaires nous permettent souvent
-d'offrir boissons et collations aux participants pour créer un climat agréable
-de discussions et de rencontres.
-
-Grâce à l'éventail large des présentations lors d'une rencontre typique, il y en
-a pour tous les calibres et les expert comme les néophytes y trouvent leur
-compte.
-
-
-### Organisateurs
-
-Les organisateurs sont présentement:
-
-* Peter El Jiz		        https://twitter.com/peterjiz
-* Igor Baiborodine      https://twitter.com/IgorBaiborodine
-* Alexandre Bourget     https://twitter.com/bourgetalexndre
-* Jonathan Stoikovitch  https://twitter.com/jstoiko
-
-
-### Code de conduite
-
-Golang Montréal adopte le
-[code de conduite de la communauté Go](https://golang.org/conduct).
-
-Les incidents liés aux activités de Golang Montréal seront gérés directement par
-l'équipe d'organisation à <a href="mailto:team@golangmontreal.org">team@golangmontreal.org</a>.
+Vous pouvez nous joindre à l'adresse <a
+href="mailto:board@fde-mtl.org">board@fde-mtl.ca</a>.

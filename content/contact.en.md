@@ -8,7 +8,9 @@ menu:
 
 ---
 
-You can reach us by e-mail at the address <a href="mailto:team@golangmontreal.org">team@golangmontreal.org</a>.
+You can reach us by e-mail at the address <a href="mailto:info@fde-mtl.ca">info@fde-mtl.ca</a>.
+
+[[ INSERT LINK TO FACEBOOK PAGE ]]
 
 You can also connect with us via social networks and other sites, listed in the
 footer of this page.

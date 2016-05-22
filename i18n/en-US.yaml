@@ -1,10 +1,21 @@
-- id: and
-  translation: "and"
+- id: orgname_short
+  translation: "FDE Montreal"
+- id: orgname_long
+  translation: "Family, Development and Education"
+- id: orgname_full
+  translation: "Family, Development and Education Montreal"
 
 - id: language_switcher_en
   translation: "English"
 - id: language_switcher_fr
   translation: "Français"
+
+# General language bits
+
+- id: and
+  translation: "and"
+
+# Navigation and home
 
 - id: home
   translation: "Home"
@@ -12,10 +23,6 @@
   translation: "About"
 - id: events
   translation: "Events"
-- id: present_bang
-  translation: "Present!"
-- id: sponsor_verb
-  translation: "Sponsor"
 - id: contact
   translation: "Contact"
 - id: connect_verb
@@ -28,13 +35,20 @@
   translation: "Sponsors"
 - id: become_a_sponsor
   translation: "Become a sponsor"
-- id: next_event
-  translation: "Next event"
-- id: next_meetup
-  translation: "Next meetup"
+- id: current_session
+  translation: "Current session"
+- id: next_course
+  translation: "Next course"
 - id: latest_news
   translation: "Latest news"
 - id: read_more
   translation: "Read more"
 - id: mission
-  translation: "Golang Montréal's mission is to promote the growth of a lively and dynamic community of Go enthusiasts in Montreal and its surroundings."
+  translation: "Enrich the life of families and couples in the greater Montreal area."
+
+# Schedules
+
+- id: schedule_small_group_meeting
+  translation: "Small group meeting of Case {{ .CaseNo }}, prior to next plenary"
+- id: schedule_plenary_note
+  translation: "Small group meetings will take place in couples homes on mutually agreed dates. We suggest 1-2 weeks before the plenary sessions"

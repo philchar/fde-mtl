@@ -4,9 +4,9 @@
       <gomtl-footer class="container">
 
         <div class="flex">
-          <h5>Gophers</h5>
+          <h5>{{ i18n "about" }}</h5>
           <ul>
-            {{ range .Site.Menus.main }}
+            {{ range .Site.Menus.footer }}
               {{ if ne .Weight 40 }}
               <li><a href="{{ .URL }}">{{ if .Post }}{{ .Post }}{{else}}{{ .Name }}{{end}}</a>
               {{ end}}
@@ -17,7 +17,7 @@
         <div class="flex">
           <h5>{{ i18n "partners" }} / {{ i18n "sponsors" }}</h5>
           <ul>
-            {{ range .Site.Menus.main }}
+            {{ range .Site.Menus.footer }}
               {{ if eq .Weight 40 }}
                 <li><a href="{{ .URL }}">{{ if .Post }}{{ .Post }}{{else}}{{ .Name }}{{end}}</a>
               {{ end}}

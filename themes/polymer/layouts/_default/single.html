@@ -9,8 +9,6 @@
 
     {{ partial "tagzone.html" . }}
 
-    {{ partial "meetup-rsvp.html" . }}
-
     <h2>{{ .Title }}</h2>
 
     <div class="description">{{ .Content }}</div>
@@ -21,8 +19,6 @@
     {{ end }}
     </div>
   </div>
-
-  <!--  partial "video-recording.html" .  -->
 
   <paper-item>
     {{if .Prev}}

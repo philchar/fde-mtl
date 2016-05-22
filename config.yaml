@@ -1,49 +1,43 @@
 ---
 theme: "polymer"
 
-baseurl: "https://golangmontreal.org"
+baseurl: "https://fde-mtl.ca"
 
 paginate: 10
 
 MetaDataFormat: "yaml"
-DefaultContentLang: en
+DefaultContentLang: fr
 
 menu:
   - main
   - footer
 
 Multilingual:
-  en:
+  fr:
     weight: 1
 
-    title: "Golang Montréal"
-    languageCode: "en-CA"
-
-    copyright: "(ɔ) 2015 Copyleft. The #gomtl team."
-
-  fr:
-    weight: 2
-
-    title: "Golang Montréal"
+    title: "Famille, développement et éducation"
     languageCode: "fr-CA"
 
-    copyright: "(ɔ) 2015 L'équipe #gomtl. Tous droits renversés."
+    copyright: "(ɔ) 2015 FDE Montréal. Tous droits renversés."
+
+  en:
+    weight: 2
+
+    title: "Family, Development and Education"
+    languageCode: "en-CA"
+
+    copyright: "(ɔ) 2015 Copyleft. FDE Montreal."
+
 
 params:
   # Number of articles in the "Latest news" section on the front page.
   homepage_news: 3
-  author: "gomtl team"
-  profile: "images/gomtl-logo-512.png"
-  linkedin: "8460965"
-  twitter: "GolangMontreal"
-  youtube: "channel/UCEse7ZihAhMMMFGesx8dJjg"
-  github: "gomtl"
-  facebook: "GolangMontreal"
-  meetup: "fr-FR/GolangMontreal"
-  slack: "https://bit.ly/go-slack-signup"
-  googleAnalyticsUserID: "UA-72488186-1"
-  # See http://www.meetup.com/fr-FR/meetup_api/buttons/
-  meetupButtonBaseURL: http://www.meetup.com/GolangMontreal
+  author: "FDE"
+  profile: "images/logo.png"
+  facebook: ""
+  # TODO: faire le setup
+  #googleAnalyticsUserID: "UA-72488186-1"
 
 permalinks:
   posts: "/:year/:month/:day/:slug/"
