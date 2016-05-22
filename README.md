@@ -1,4 +1,12 @@
-Golang Montréal's website
-=========================
+FDE Montréal - Family, Development and Education
+================================================
 
-Built with [Hugo](https://gohugo.io) accessible at https://golangmontreal.org
+Here is the source code to the https://fde-mtl.ca website.  You can freely fork
+it and use it for your organisation.
+
+It is based on [Hugo](https://gohugo.io).
+
+Contribuer / Contributing
+-------------------------
+
+[Comment contribuer](CONTRIBUER.md) / [How to contribute](CONTRIBUTING.md)
