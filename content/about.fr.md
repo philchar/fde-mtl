@@ -9,11 +9,13 @@ menu:
 ---
 
 Famille, Développement et Éducation (FDE) est un organisme à but non lucratif affilié à
-[Family Development Canada](http://www.familydevelopment.ca/) et à l'[International Federation for Family Development](http://iffd.org), une ONG ayant [statut consultatif général](https://en.wikipedia.org/wiki/Consultative_status#General) auprès des [Nations Unies](http://www.un.org)
+[Family Development Canada](http://www.familydevelopment.ca/) puis à l'[International Federation for Family Development](http://iffd.org), une ONG ayant [statut consultatif général](https://en.wikipedia.org/wiki/Consultative_status#General) auprès des [Nations Unies](http://www.un.org)
 
-FDE dispense des cours offerts aux couples pour améliorer leur capacités parentales, familiales et conugales.
+FDE dispense des cours offerts aux couples pour améliorer leur capacités
+parentales, familiales et conjugales.
 
-Pour plus de quatre décennies maintenant, des dizaines de milliers de couples partout à travers le monde ont profité de ces cours.
+Depuis plus de quatre décennies maintenant, des dizaines de milliers de couples
+à travers le monde ont bénéficié de ces cours.
 
 FDE Montréal organise ces cours dans la grande région de Montréal.
 

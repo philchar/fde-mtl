@@ -17,7 +17,7 @@ FDE provides and dispenses courses to couples to help better their family life.
 For more than four decades, tends of thousands of married couples around the
 world benefited from these courses.
 
-FDE Montreal organises those course and brings them to the greater Montreal
+FDE Montreal is responsible for bringing those courses to the greater Montreal
 area.
 
 <!--

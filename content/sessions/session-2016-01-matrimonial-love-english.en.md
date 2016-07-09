@@ -1,11 +1,13 @@
 ---
-categories:
- - news
 date: 2015-12-04T12:14:00-04:00
+
+title: "Matrimonial Love - McGill"
 session:
+  title: "Matrimonial Love"
   start_date: "Friday, January 22nd 2016"
+  course_image: "first-decisions.jpg"
 venue:
-  name: "Department of Civil Engineering and Applied Mechanics"
+  name: "McGill University, MacDonald Engineering building"
   address: "Corner Milton & University, Montreal"
   latitude: 45.5056501
   longitude: -73.5773285
@@ -26,35 +28,37 @@ schedule:
  - case: 5
    groups: true
    date: Friday, May 13th, 2016
-time: "7:30pm -- 9:30pm"
-title: "Matrimonial Love - McGill"
-
+time:
+  from: "7:30pm"
+  to: "9:30pm"
+cost:
+  amount: 125
+  per_couple: true
+registration:
+  registration_form:
+  deadline: "Monday, January 5th 2016"
+  paypal_item: "NLL5P7YY8JU74"
 ---
 
+[course presentation, could be taken from an official documentation of course
+ presentation, so when they come back again, it affects all pages of that
+ course]
+
+It is offered in English and starts **January 22nd, 2016**.
 
 <!--more-->
 
-{{% schedule %}}
+### Presentation
 
-There will be food at the event. Come on early and have a chat with folks from
-the community.
+See http://www.projetfamille.ca/cours/matrimonial-love-winter-2016/
+
+{{% schedule %}}
 
 
 ### Where
 
-Our second meetup will be held at **Shopify's Montreal office**  (_490 Rue de La Gauchetière Ouest, Montréal, H2Z 0B3_, https://goo.gl/maps/B4ekxN81as72)
-
-Please indicate your presence via the RSVP widget above.
-
 
 ### When
 
-Join us on **Tuesday, March 29th**, around 6:00pm for an amazing night of Go.
-
 
 ### Schedule
-
-* **6:00pm** -- Doors open
-* **6:30pm** -- Presentations
-* **7:30pm** -- Break / Networking
-* **8:00pm** -- End

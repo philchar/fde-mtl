@@ -1,10 +1,10 @@
-{{ $baseurl := .Site.BaseURL }}
+ {{ $baseurl := .Site.BaseURL }}
 {{ $lang := .Site.CurrentLanguage }}
 
 <div class="content">
 
 {{range $index, $page := .Paginator.Pages}}
-  <div class="article">
+   <div class="article">
 
     {{ partial "tagzone.html" . }}
 

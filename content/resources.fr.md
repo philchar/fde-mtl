@@ -5,7 +5,6 @@ slug: ressources
 menu:
  footer:
    weight: 50
-
 ---
 
 Ressources:

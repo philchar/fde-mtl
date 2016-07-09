@@ -6,3 +6,15 @@
   translation: "par"
 - id: "watch_video"
   translation: "Regarder la vidéo"
+- id: offered_courses
+  translation: "Cours offerts"
+- id: details
+  translation: "Détails"
+- id: register
+  translation: "S'inscrire"
+- id: pay_now
+  translation: "/images/payer_avec_paypal.gif"
+- id: starts
+  translation: "Débute"
+- id: offered_courses
+  translation: "Cours offerts"

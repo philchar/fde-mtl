@@ -48,3 +48,10 @@
   translation: "Enrichire la vie des familles et des couples de la grande région de Montréal."
 
 # Schedules
+
+- id: schedule_plenary
+  translation: "Plénière cas {{ .num }}"
+- id: schedule_small_group_meeting
+  translation: "Rencontre en sous-groupes, cas {{.num }}, avant la plénière suivante"
+- id: schedule_plenary_note
+  translation: "Les rencontres en sous-groupes ont lieux chez les participants à une date convenue avec le groupe. Nous suggérons 1 à 2 semaines avant la plénière."

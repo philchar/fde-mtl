@@ -48,7 +48,9 @@
 
 # Schedules
 
+- id: schedule_plenary
+  translation: "Case {{ .num }} plenary"
 - id: schedule_small_group_meeting
-  translation: "Small group meeting of Case {{ .CaseNo }}, prior to next plenary"
+  translation: "Small group meeting of Case {{ .num }}, prior to next plenary"
 - id: schedule_plenary_note
   translation: "Small group meetings will take place in couples homes on mutually agreed dates. We suggest 1-2 weeks before the plenary sessions"

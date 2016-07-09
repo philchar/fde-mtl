@@ -8,6 +8,10 @@ paginate: 10
 MetaDataFormat: "yaml"
 DefaultContentLang: fr
 
+ignoreFiles:
+  - "~$"
+  - "\\.#"
+
 menu:
   - main
   - footer
