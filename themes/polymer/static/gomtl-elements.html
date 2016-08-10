@@ -17,26 +17,35 @@
   <style>
   :host {
     display: block;
+    background: url("/images/grouppic.png") center center no-repeat no-repeat;
+    height: 700px;
+  }
+  .large-view {
+    padding-top: 100px;
+  }
+  .content {
+    color: white;
+    padding: 30px;
   }
   img {
-    max-width: 248px;
+    max-width: 500px;
   }
   .logo-again {
     text-align: center;
   }
+  ::content p {
+    padding: 15px 0;
+  }
+  ::content a {
+    padding-left: 25px;
+  }
   @media (min-width: 961px) {
-    .small-view {
-      display: none;
-    }
-    .hero-text {
-      text-align: right;
+    .content {
+      text-align: left;
     }
   }
   @media (max-width: 960px) {
-    .large-view {
-      display: none;
-    }
-    .hero-text {
+    .content {
       text-align: center;
     }
   }
@@ -44,19 +53,15 @@
 
   <template>
     <div class="layout horizontal">
-      <div class="flex hero-text">
+      <div class="flex large-view">
 
-        <content></content>
+        <img src="/images/logo-large-alpha-{{ lang }}.png">
+
+        <div class="content">
+          <content></content>
+        </div>
 
       </div>
-      <div class="flex large-view" style="text-align: center;">
-
-        <img src="/images/logo.png">
-
-      </div>
-    </div>
-    <div class="small-view logo-again">
-      <img src="/images/logo.png">
     </div>
   </template>
   <script>

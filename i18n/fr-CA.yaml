@@ -46,6 +46,11 @@
   translation: "Lire la suite"
 - id: mission
   translation: "Enrichire la vie des familles et des couples de la grande région de Montréal."
+- id: learn_more_method
+  translation: "Comprendre la méthode"
+- id: see_courses
+  translation: "Voir les cours offerts"
+
 
 # Schedules
 

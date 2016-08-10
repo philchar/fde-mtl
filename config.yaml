@@ -38,7 +38,7 @@ params:
   # Number of articles in the "Latest news" section on the front page.
   homepage_news: 3
   author: "FDE"
-  profile: "images/logo.png"
+  profile: "images/logo-small-alpha-fr.png"
   facebook: ""
   # TODO: faire le setup
   #googleAnalyticsUserID: "UA-72488186-1"

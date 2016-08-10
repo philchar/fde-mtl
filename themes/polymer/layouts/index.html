@@ -4,19 +4,19 @@
 {{ $nextSession := (index .Site.Sections.sessions 0).Page }}
 {{ $venueData := $nextSession.Params.venue }}
 
-<section>
-  <gomtl-hero class="container">
-    <h1>{{ i18n "orgname_long" }}</h1>
-
+<section style="background-color: #373b50; padding-bottom: 0;">
+  <gomtl-hero class="container" lang="{{$lang}}">
     <p>{{ i18n "mission" }}</p>
 
-    <h4>{{ i18n "current_session" }}: <a href="{{ $nextSession.Permalink }}" style="font-weight: bold;">{{ $nextSession.Title }}</a> </h4>
+    <p><a href="{{ relref . (printf "the-case-method.%s.md" $lang) }}"><paper-button style="background: #f2f7fa" raised>{{ i18n "learn_more_method" }}</paper-button></a></p>
+
+    <p><a href="#offered-courses"><paper-button style="background: #f2f7fa" raised>{{ i18n "see_courses" }}</paper-button></a></p>
   </gomtl-hero>
 </section>
 
 <section>
   <div class="container">
-    <h2>{{ i18n "offered_courses" }}</h2>
+    <h2 id="offered-courses">{{ i18n "offered_courses" }}</h2>
     <featured-courses>
     {{ range .Site.Sections.sessions }}
 
@@ -123,19 +123,6 @@
   </div>
 </section>
 
-<google-map longitude="{{ $venueData.longitude }}"
-            latitude="{{ $venueData.latitude }}"
-            zoom="{{ $venueData.zoom }}"
-            language="{{ $lang }}" style="height: 450px;"
-            disable-zoom="true">
-  <google-map-marker longitude="{{ $venueData.longitude }}" latitude="{{ $venueData.latitude }}"
-                     title="{{ $venueData.name }}" draggable="true">
-    <h5>{{ $venueData.name }}</h5>
-    <p>{{ $venueData.address }}</p>
-
-  </google-map-marker>
-</google-map>
-
 <section hero>
   <gomtl-latest-news class="container">
     <h2 title>{{ i18n "latest_news" }}</h2>
@@ -144,7 +131,7 @@
   </gomtl-latest-news>
 </section>
 
-<section class="sponsors">
+<!-- section class="sponsors">
   <div class="container align-center">
 
     <h4>{{ i18n "sponsors" }}</h4>
@@ -157,6 +144,6 @@
       {{end}}
     </div>
   </div>
-</section>
+</section-->
 
 {{ partial "footer.html" . }}

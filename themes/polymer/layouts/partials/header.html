@@ -32,7 +32,6 @@
   <link rel="import" href="{{$baseurl}}/bower_components/iron-image/iron-image.html">
   <link rel="import" href="{{$baseurl}}/gomtl-elements.html">
   <link rel="import" href="{{$baseurl}}/featured-courses.html">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/monokai-sublime.min.css">
   <style is="custom-style">
   :root {
     --quarter-color: #C5C9DE;
@@ -93,9 +92,6 @@
     }
   }
   @media (max-width: 960px) {
-    .title-logo {
-      display: none;
-    }
     .menus {
       display: none;
     }
@@ -114,7 +110,7 @@
   .profile {
     width: 185%;
     padding-bottom: 20px;
-    margin: 0 auto 36px;
+    margin: 0 auto;
     height: 185%;
   }
    .menus paper-button {
@@ -236,7 +232,7 @@
        background: #fafafd;
    }
   .main-title iron-image {
-    width: 64px;
+    width: 138px;
     height: 64px;
     vertical-align: middle;
     margin-left: -10px;
@@ -250,8 +246,7 @@
   <paper-drawer-panel id="drawerPanel" force-narrow narrow>
     <paper-header-panel drawer>
       <paper-toolbar class="sidenav tall">
-        <iron-image class="profile middle" sizing="contain" src="{{$baseurl}}/{{.Site.Params.profile}}"></iron-image>
-        <div class="bottom">{{ i18n "orgname_short" }}</div>
+        <iron-image class="profile middle" sizing="contain" src="{{$baseurl}}/{{.Site.Params.profile}}" title="{{ i18n "orgname_short" }}"></iron-image>
       </paper-toolbar>
 
       <paper-menu>
@@ -276,7 +271,7 @@
         <paper-icon-button class="hamburger" icon="menu" paper-drawer-toggle></paper-icon-button>
 
         <div class="flex main-title">
-          <a href="{{$baseurl}}/{{$lang}}"><iron-image class="title-logo" src="/images/logo.png" sizing="contain"></iron-image></a>&nbsp;<a href="{{$baseurl}}/{{$lang}}">{{ i18n "orgname_short" }}</a>
+          <a href="{{$baseurl}}/{{$lang}}"><iron-image class="title-logo" src="/images/logo-small-alpha-{{$lang}}.png" sizing="contain" title="{{ i18n "orgname_short" }}"></iron-image></a>
         </div>
 
 
@@ -293,9 +288,9 @@
             {{ range $txLang := .Site.Languages }}
               {{if ne $lang $txLang}}
                 {{if isset $.Translations $txLang}}
-                  <a href="{{ (index $.Translations $txLang).Permalink }}">{{ i18n ( printf "language_switcher_%s" $txLang ) }}</a>
+                  <a href="{{ (index $.Translations $txLang).Permalink }}"><paper-button>{{ i18n ( printf "language_switcher_%s" $txLang ) }}</paper-button></a>
                 {{else}}
-                  <a href="/{{$txLang}}">{{ i18n ( printf "language_switcher_%s" $txLang ) }}</a>
+                  <a href="/{{$txLang}}"><paper-button>{{ i18n ( printf "language_switcher_%s" $txLang ) }}</paper-button></a>
                 {{end}}
               {{end}}
             {{end}}
@@ -304,7 +299,7 @@
           {{if .IsNode}}
             {{ range $txLang := .Site.Languages }}
               {{if ne $lang $txLang}}
-                <a href="/{{$txLang}}">{{ i18n ( printf "language_switcher_%s" $txLang ) }}</a>
+                <a href="/{{$txLang}}"><paper-button>{{ i18n ( printf "language_switcher_%s" $txLang ) }}</paper-button></a>
               {{end}}
             {{end}}
           {{end}}

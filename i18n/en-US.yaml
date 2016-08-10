@@ -45,6 +45,10 @@
   translation: "Read more"
 - id: mission
   translation: "Enrich the life of families and couples in the greater Montreal area."
+- id: learn_more_method
+  translation: "Learn more about the method"
+- id: see_courses
+  translation: "See courses offered"
 
 # Schedules
 
