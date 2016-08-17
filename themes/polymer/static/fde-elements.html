@@ -1,7 +1,7 @@
 <!-- link rel="import" href="bower_components/paper-button/paper-button.html" -->
 
 
-<dom-module id="gomtl-article">
+<dom-module id="fde-article">
   <style>
   </style>
 
@@ -9,11 +9,11 @@
 
   </template>
   <script>
-  Polymer({is: 'gomtl-article'});
+  Polymer({is: 'fde-article'});
   </script>
 </dom-module>
 
-<dom-module id="gomtl-hero">
+<dom-module id="fde-hero">
   <style>
   :host {
     display: block;
@@ -45,17 +45,49 @@
     }
   }
   @media (max-width: 960px) {
-    .content {
-      text-align: center;
+    :host {
+      background-size: cover;
     }
   }
+  @media (max-width: 1135px) {
+    .content, .large-view {
+      text-align: center;
+    }
+    .logo {
+      max-width: 65%;
+    }
+    :host {
+      background-position-y: 0;
+      background-size: cover;
+      height: 520px;
+    }
+    ::content p {
+        padding: 1% 0;
+    }
+    .large-view {
+      padding-top: 10%;
+    }
+  }
+  @media (max-width: 600px) {
+    .content {
+      padding: 0;
+    }
+    .logo {
+        max-width: 95%;
+    }
+    :host {
+        background-size: cover;
+        height: 450px;
+    }
+  }
+
   </style>
 
   <template>
     <div class="layout horizontal">
       <div class="flex large-view">
 
-        <img src="/images/logo-large-alpha-{{ lang }}.png">
+        <img class="logo" src="/images/logo-large-alpha-{{ lang }}.png">
 
         <div class="content">
           <content></content>
@@ -65,11 +97,11 @@
     </div>
   </template>
   <script>
-  Polymer({is: 'gomtl-hero'});
+  Polymer({is: 'fde-hero'});
   </script>
 </dom-module>
 
-<dom-module id="gomtl-latest-news" class="container">
+<dom-module id="fde-latest-news" class="container">
   <style>
   :host {
     display: block;
@@ -102,12 +134,12 @@
     </div>
   </template>
   <script>
-  Polymer({is: 'gomtl-latest-news'});
+  Polymer({is: 'fde-latest-news'});
   </script>
 </dom-module>
 
 
-<dom-module id="gomtl-footer">
+<dom-module id="fde-footer">
   <style>
   :host {
     display: block;
@@ -127,6 +159,6 @@
     </div>
   </template>
   <script>
-  Polymer({is: 'gomtl-footer'});
+  Polymer({is: 'fde-footer'});
   </script>
 </dom-module>

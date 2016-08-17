@@ -5,13 +5,13 @@
 {{ $venueData := $nextSession.Params.venue }}
 
 <section style="background-color: #373b50; padding: 0;">
-  <gomtl-hero class="container" lang="{{$lang}}">
+  <fde-hero class="container" lang="{{$lang}}">
     <p>{{ i18n "mission" }}</p>
 
     <p><a href="{{ relref . (printf "the-case-method.%s.md" $lang) }}"><paper-button style="background: #f2f7fa" raised>{{ i18n "learn_more_method" }}</paper-button></a></p>
 
     <p><a href="#offered-courses"><paper-button style="background: #f2f7fa" raised>{{ i18n "see_courses" }}</paper-button></a></p>
-  </gomtl-hero>
+  </fde-hero>
 </section>
 
 <section>
@@ -124,11 +124,11 @@
 </section>
 
 <section hero>
-  <gomtl-latest-news class="container">
+  <fde-latest-news class="container">
     <h2 title>{{ i18n "latest_news" }}</h2>
 
     {{ partial "homepage-latest-news.html" . }}
-  </gomtl-latest-news>
+  </fde-latest-news>
 </section>
 
 <!-- section class="sponsors">
