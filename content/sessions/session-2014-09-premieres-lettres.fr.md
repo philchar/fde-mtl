@@ -19,6 +19,7 @@ schedule:
 time:
   from: "19h30"
   to: "22h00"
+past: true
 ---
 
 FDE Montréal (anciennement Projet Famille) a offert le cours **Premières lettres** à

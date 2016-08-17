@@ -34,6 +34,7 @@ time:
 registration:
   registration_form:
   deadline: "8 septembre 2012"
+past: true
 ---
 
 FDE Montréal (anciennement Projet Famille) a offert le cours **Amour et

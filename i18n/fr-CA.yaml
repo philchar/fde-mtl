@@ -18,6 +18,8 @@
 
 - id: and
   translation: "et"
+- id: past
+  translation: passé
 
 # Navigation and home
 

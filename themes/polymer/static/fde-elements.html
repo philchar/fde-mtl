@@ -20,6 +20,13 @@
     width: 400px;
     min-width: 400px;
   }
+  .past {
+    float: right;
+    text-transform: uppercase;
+    padding: 20px 0 0 10px;
+    font-size: 85%;
+    color: #777;
+  }
   .card-content, .card-actions {
     @apply(--ellipsis);
     color: var(--primary-text-color);
@@ -39,6 +46,7 @@
         <iron-image src="/images/courses/{{ image }}" sizing="cover">
       </div>
       <div class="card-content">
+        <span hidden$="{{!past}}" class="past">{{past}}</span>
         <a href="{{ permalink }}"><h3 class="course-name">{{ label }}</h3></a>
 
         <paper-icon-item class="location">
@@ -67,6 +75,10 @@
         value: ""
       },
       mapslink: {
+        type: String,
+        value: ""
+      },
+      past: {
         type: String,
         value: ""
       }

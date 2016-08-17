@@ -30,6 +30,7 @@
       <fde-course image="{{ $pp.session.course_image }}"
                   permalink="{{ $p.Permalink }}"
                   label="{{ $pp.session.title }}"
+                  past="{{if $pp.past }}{{i18n "past"}}{{end}}"
                   venue="{{ $pp.venue.name }}"
                   mapslink="{{ $pp.venue.map_link }}"
                   startdate="{{ $pp.session.start_date }}"

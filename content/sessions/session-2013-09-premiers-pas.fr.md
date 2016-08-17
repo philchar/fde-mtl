@@ -31,6 +31,7 @@ schedule:
 time:
   from: "19h"
   to: "21h30"
+past: true
 ---
 
 FDE Montréal (anciennement Projet Famille) a offert le cours **Premier pas** à

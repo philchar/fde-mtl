@@ -20,6 +20,7 @@
                         permalink="{{ .Permalink }}"
                         label="{{ $p.session.title }}"
                         venue="{{ $p.venue.name }}"
+                        past="{{ if $p.past }}{{i18n "past"}}{{end}}"
                         mapslink="{{ $p.venue.map_link }}"
                         startdate="{{ $p.session.start_date }}"></fde-course>
 

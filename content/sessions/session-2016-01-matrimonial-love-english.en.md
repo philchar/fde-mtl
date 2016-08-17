@@ -34,10 +34,7 @@ time:
 cost:
   amount: 125
   per_couple: true
-registration_terminated:
-  registration_form:
-  deadline: "Monday, January 5th 2016"
-  paypal_item: "NLL5P7YY8JU74"
+past: true
 ---
 
 Matrimonial Love is a course developed by professionals at IFFD (International
