@@ -18,7 +18,7 @@
     <div style="float: right;">
             <fde-course image="{{ $p.session.course_image }}"
                         permalink="{{ .Permalink }}"
-                        label="{{ $p.session.title }}"
+                        label="{{ .Title }}"
                         venue="{{ $p.venue.name }}"
                         past="{{ if $p.past }}{{i18n "past"}}{{end}}"
                         mapslink="{{ $p.venue.map_link }}"
