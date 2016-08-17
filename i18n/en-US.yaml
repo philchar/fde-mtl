@@ -9,6 +9,10 @@
   translation: "English"
 - id: language_switcher_fr
   translation: "Français"
+- id: language_fr
+  translation: "French"
+- id: language_en
+  translation: "English"
 
 # General language bits
 

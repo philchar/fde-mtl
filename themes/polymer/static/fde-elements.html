@@ -13,6 +13,69 @@
   </script>
 </dom-module>
 
+<dom-module id="fde-course">
+  <style>
+  .session {
+    margin-right: 24px;
+    width: 400px;
+    min-width: 400px;
+  }
+  .card-content, .card-actions {
+    @apply(--ellipsis);
+    color: var(--primary-text-color);
+  }
+  .card-actions {
+    text-align: right;
+  }
+  .session iron-image {
+    height: 200px;
+    width: 100%;
+  }
+  </style>
+
+  <template>
+    <paper-card class="session">
+      <div class="header">
+        <iron-image src="/images/courses/{{ image }}" sizing="cover">
+      </div>
+      <div class="card-content">
+        <a href="{{ permalink }}"><h3 class="course-name">{{ label }}</h3></a>
+
+        <paper-icon-item class="location">
+          <iron-icon icon="communication:location-on" item-icon></iron-icon>
+          <p class="venue"><a target="_blank" href="{{ mapslink }}">{{ venue }}</a></p>
+        </paper-icon-item>
+
+        <paper-icon-item class="start-date">
+          <iron-icon icon="icons:event" item-icon></iron-icon>
+          <p>{{ i18n "starts" }} {{ startdate }}</p>
+        </paper-icon-item>
+      </div>
+
+      <div class="card-actions" hidden$="{{ !details }}">
+        <a href="{{ permalink }}"><paper-button>{{ details }}</paper-button></a>
+      </div>
+    </paper-card>
+
+  </template>
+  <script>
+  Polymer({
+    is: 'fde-course',
+    properties: {
+      details: {
+        type: String,
+        value: ""
+      },
+      mapslink: {
+        type: String,
+        value: ""
+      }
+    },
+  });
+  </script>
+</dom-module>
+
+
 <dom-module id="fde-hero">
   <style>
   :host {
@@ -33,10 +96,10 @@
   .logo-again {
     text-align: center;
   }
-  ::content p {
+  ::content fde-hero p {
     padding: 15px 0;
   }
-  ::content a {
+  ::content fde-hero a {
     padding-left: 25px;
   }
   @media (min-width: 961px) {

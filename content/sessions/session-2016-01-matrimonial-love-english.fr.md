@@ -11,4 +11,4 @@ session_language: "en"
 FDE Montréal offre le cours **Matrimonial Love** en anglais dans les locaux de
 l'Université McGill.
 
-Voir [l'article anglais pour les détails](ref:session-2016-01-matrimonial-love-english)
+Voir [l'article anglais pour les détails]({{< ref "session-2016-01-matrimonial-love-english.en.md" >}})

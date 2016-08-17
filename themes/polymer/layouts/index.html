@@ -27,92 +27,20 @@
       {{ $pp := ($.Scratch.Get "p").Params }}
       {{ $p := $.Scratch.Get "p" }}
 
-      <paper-card class="session" image="/images/courses/{{ $pp.session.course_image }}">
-        <div class="card-content">
-          <a href="{{ $p.Permalink }}"><h3 class="course-name">{{ $pp.session.title }}</h3></a>
-
-          <paper-icon-item class="location">
-            <iron-icon icon="communication:location-on" item-icon></iron-icon>
-            <p class="venue">{{ $pp.venue.name }}</p>
-          </paper-icon-item>
-
-          <paper-icon-item class="start-date">
-            <iron-icon icon="icons:event" item-icon></iron-icon>
-            <p>{{ i18n "starts" }} {{ $pp.session.start_date }}</p>
-          </paper-icon-item>
-        </div>
-
-        <div class="card-actions">
-          <a href="{{ $p.Permalink }}"><paper-button>{{ i18n "details" }}</paper-button></a>
-          <a href="{{ $p.Permalink }}"><paper-button>{{ i18n "register" }}</paper-button></a>
-        </div>
-      </paper-card>
-
-      <paper-card class="session" image="/images/courses/pre-adolescence.jpg">
-        <div class="card-content">
-          <h4>{{ .Page.Params.venue.name }}</h4>
-          <p>McGill Buildling of Engineering.</p>
-        </div>
-        <div class="card-actions">
-          <div>
-            Starts January 31st 2017
-          </div>
-
-          <paper-button>{{ i18n "details" }}</paper-button>
-          <paper-button>{{ i18n "register" }}</paper-button>
-        </div>
-      </paper-card>
-
-      <paper-card class="session" image="/images/courses/first-steps.jpg">
-        <div class="card-content">
-          <h4>{{ .Page.Params.venue.name }}</h4>
-          <p>McGill Buildling of Engineering.</p>
-        </div>
-        <div class="card-actions">
-          <div>
-            Starts January 31st 2016
-          </div>
-
-          <paper-button>{{ i18n "details" }}</paper-button>
-          <paper-button>{{ i18n "register" }}</paper-button>
-        </div>
-      </paper-card>
-
-      <paper-card class="session" image="/images/courses/young-professionals.jpg">
-        <div class="card-content">
-          <h4>{{ .Page.Params.venue.name }}</h4>
-          <p>McGill Buildling of Engineering.</p>
-        </div>
-        <div class="card-actions">
-          <div>
-            Starts January 31st 2016
-          </div>
-
-          <paper-button>Details</paper-button>
-          <paper-button>Register</paper-button>
-        </div>
-      </paper-card>
-
-      <paper-card class="session" heading="{{ .Page.Params.venue.name }}" image="http://placehold.it/350x150/FFC107/000000">
-        <div class="card-content">
-          McGill Buildling of Engineering.
-        </div>
-        <div class="card-actions">
-          <div>
-            Starts January 31st
-          </div>
-
-          <paper-button>Details</paper-button>
-          <paper-button>Register</paper-button>
-        </div>
-      </paper-card>
+      <fde-course image="{{ $pp.session.course_image }}"
+                  permalink="{{ $p.Permalink }}"
+                  label="{{ $pp.session.title }}"
+                  venue="{{ $pp.venue.name }}"
+                  mapslink="{{ $pp.venue.map_link }}"
+                  startdate="{{ $pp.session.start_date }}"
+                  details="{{ i18n "details" }}"></fde-course>
 
     {{ end }}
     </featured-courses>
   </div>
 </section>
 
-<section hero>
+<!-- section hero>
   <div class="next-meetup layout horizontal">
     <div class="align-right flex">
       <span>{{ i18n "current_session" }}</span>
@@ -121,7 +49,7 @@
       {{ $nextSession.Title }}
     </div>
   </div>
-</section>
+</section-->
 
 <section hero>
   <fde-latest-news class="container">

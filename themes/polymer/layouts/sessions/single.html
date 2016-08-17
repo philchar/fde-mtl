@@ -1,25 +1,37 @@
 {{ $baseurl := .Site.BaseURL }}
 {{ $langPrefix := .Site.LanguagePrefix }}
-{{ $p := .Page.params }}
+{{ $p := .Params }}
 
 {{ if ne $p.session_language nil }}
-<html><head><meta http-equiv="refresh" content="0;url={{ (index .Page.Translations $p.session_language).Permalink }}" /></head></html>
+<html><head><meta http-equiv="refresh" content="0;url={{ (index .Translations $p.session_language).Permalink }}" /></head></html>
 {{ else }}
 
 
 
   {{ partial "header.html" . }}
 
+<section>
+  <div class="container">
 
-  <h1>{{ $p.title }}</h1>
+    <h1>{{ $p.session.title }}</h1>
 
-  {{ .Page.Content }}
+    <div style="float: right;">
+            <fde-course image="{{ $p.session.course_image }}"
+                        permalink="{{ .Permalink }}"
+                        label="{{ $p.session.title }}"
+                        venue="{{ $p.venue.name }}"
+                        mapslink="{{ $p.venue.map_link }}"
+                        startdate="{{ $p.session.start_date }}"></fde-course>
 
-  This course is offered in {{ i18n printf "language_%s" .Site.CurrentLanguage }} and starts <strong>{{ $p.session.start_date }}</strong>.
+    </div>
+
+  {{ .Content }}
+
+  This course is offered in {{ i18n (printf "language_%s" $.Site.CurrentLanguage) }} and starts <strong>{{ $p.session.start_date }}</strong>.
 
   <h3>Course schedule</h3>
 
-  insert schedule, properly formatted
+  {{ partial "schedule.html" . }}
 
   <h3>Time</h3>
 
@@ -36,15 +48,20 @@
   </p>
 
   <!-- Insert Google Maps map -->
-
+{{ with $p.cost }}
   <h3>Cost</h3>
 
-  <p>{{ $p.cost.amount }}$ {{ if $p.cost.per_couple }}per couple{{ else }}per person{{ end }}.</p>
+  <p>{{ .amount }}$ {{ if .per_couple }}per couple{{ else }}per person{{ end }}.</p>
+{{ end }}
 
+{{ with $p.registration }}
   <h3>Registration and payment</h3>
 
-  <p>Deadline for registration: <strong>{{ $p.registration.deadline }}</strong></p>
+  {{ if isset . "deadline" }}
+    <p>Deadline for registration: <strong>{{ .deadline }}</strong></p>
+  {{ end }}
 
+  {{ if isset . "paypal_item" }}
   <p>
     Register here and then proceed to payment below.
   </p>
@@ -58,9 +75,16 @@
   <p>After registering, proceed to payment:</p>
 
   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick" />Please <a href="http://goo.gl/forms/omc4UywiDR">register here first</a> and then proceed to payment:<br />
-<input name="hosted_button_id" type="hidden" value="{{ $p.registration.paypal_item }}" /><br />
+<input name="hosted_button_id" type="hidden" value="{{ .paypal_item }}" /><br />
 <input alt="{{ i18n "pay_with_paypal" }}" name="submit" src="{{ i18n "pay_now" }}" type="image" /><br />
 <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" /></form>
+
+  {{ end }}
+
+{{ end }}
+
+  </div>
+</section>
 
   {{ partial "footer.html" . }}
 

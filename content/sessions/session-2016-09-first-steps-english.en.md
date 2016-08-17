@@ -1,11 +1,11 @@
 ---
-date: 2015-12-04T12:14:00-04:00
+date: 2016-08-16T12:00:00-04:00
 
-title: "Matrimonial Love - McGill"
+title: "First Steps - McGill"
 session:
-  title: "Matrimonial Love"
-  start_date: "Friday, January 22nd 2016"
-  course_image: "marriedlove.jpg"
+  title: "First Steps"
+  start_date: "Friday, September 23rd 2016"
+  course_image: "first-steps.jpg"
 venue:
   name: "McGill University, MacDonald Engineering building"
   address: "Corner Milton & University, Montreal"
@@ -15,29 +15,32 @@ venue:
   zoom: 17
 schedule:
  - case: 1
-   date: "Friday, January 22nd 2016"
+   date: "Friday, September 23rd 2016"
  - case: 2
    groups: true
-   date: "Friday, February 12th, 2016"
+   date: "Friday, October 21st, 2016"
  - case: 3
    groups: true
-   date: Friday, March 18th, 2016
+   date: Friday, November 25th, 2016
  - case: 4
    groups: true
-   date: Friday, April 15th, 2016
+   date: Friday, January 27th, 2017
  - case: 5
    groups: true
-   date: Friday, May 13th, 2016
+   date: Friday, March 17th, 2017
+ - case: 6
+   groups: true
+   date: Friday, April 21st, 2017
 time:
   from: "7:30pm"
   to: "9:30pm"
-cost:
-  amount: 125
-  per_couple: true
-registration_terminated:
-  registration_form:
-  deadline: "Monday, January 5th 2016"
-  paypal_item: "NLL5P7YY8JU74"
+#cost:
+#  amount: 125
+#  per_couple: true
+#registration:
+#  registration_form:
+#  deadline: "Monday, January 5th 2016"
+#  paypal_item: "NLL5P7YY8JU74"
 ---
 
 Matrimonial Love is a course developed by professionals at IFFD (International
