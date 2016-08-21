@@ -50,13 +50,13 @@
             disable-zoom="true"
             api-key="AIzaSyAAhXurUtig-L2BqZE-BS5hWLXBxcsqi5A">
   <google-map-marker longitude="{{ $p.venue.longitude }}" latitude="{{ $p.venue.latitude }}"
-                     title="{{ $p.venue.name }}" draggable="true">
-    <address>
-      <a href="{{ $p.venue.map_link }}">{{ $p.venue.name }}</a>
+                     title="{{ $p.venue.name }}" open="true">
+    <h5>{{ $p.venue.name }}</h5>
+    <p>
       {{ $p.venue.address }}{{ if $p.venue.address2 }}
-      {{ $p.venue.address2 }}{{ end }}
-    </address>
-
+        {{ $p.venue.address2 }}{{ end }}
+    </p>
+    <p><a href="{{ $p.venue.map_link }}">Google Maps</a></p>
   </google-map-marker>
 </google-map>
 
