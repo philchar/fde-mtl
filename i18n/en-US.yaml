@@ -64,3 +64,25 @@
   translation: "Small group meeting of Case {{ .num }}, prior to next plenary"
 - id: schedule_plenary_note
   translation: "Small group meetings will take place in couples homes on mutually agreed dates. We suggest 1-2 weeks before the plenary sessions"
+- id: course_schedule
+  translation: "Course schedule"
+- id: hourly_time
+  translation: "Time"
+- id: venue
+  translation: "Venue"
+- id: cost
+  translation: "Cost"
+- id: per_couple
+  translation: "per couple"
+- id: per_person
+  translation: "per person"
+- id: registration_and_payment
+  translation: "Registration and payment"
+- id: deadline
+  translation: "Deadline"
+- id: registration_instructions
+  translation: "Register first and then proceed to payment below. If you prefer other means of payment, contact us after your registration. We will accomodate you."
+- id: register_now
+  translation: "Register now"
+- id: course_offered_and_starts
+  translation: "This course is offered in %s and starts"

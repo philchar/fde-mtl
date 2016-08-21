@@ -41,6 +41,10 @@
   .course-name {
     line-height: 2.5ex;
   }
+  .register {
+    font-weight: bold;
+    color: #e25c5c;
+  }
   </style>
 
   <template>
@@ -64,6 +68,7 @@
       </div>
 
       <div class="card-actions" hidden$="{{ !details }}">
+        <a href="{{ permalink }}" class="register"><paper-button>{{ register }}</paper-button></a>
         <a href="{{ permalink }}"><paper-button>{{ details }}</paper-button></a>
       </div>
     </paper-card>
@@ -74,6 +79,10 @@
     is: 'fde-course',
     properties: {
       details: {
+        type: String,
+        value: ""
+      },
+      register: {
         type: String,
         value: ""
       },

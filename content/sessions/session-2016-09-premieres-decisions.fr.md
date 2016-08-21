@@ -37,10 +37,10 @@ time:
 cost:
   amount: 125
   per_couple: true
-#registration:
-#  registration_form:
-#  deadline: "Monday, January 5th 2016"
-#  paypal_item: "NLL5P7YY8JU74"
+registration:
+  registration_form:
+  deadline: "Vendredi, 16 septembre 2016"
+  paypal_item: "5GAALG8SKPN8Y"
 ---
 
 À compter du vendredi 23 septembre 2016, FDE Montréal (anciennement Projet

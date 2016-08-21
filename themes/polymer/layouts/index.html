@@ -34,7 +34,9 @@
                   venue="{{ $pp.venue.name }}"
                   mapslink="{{ $pp.venue.map_link }}"
                   startdate="{{ $pp.session.start_date }}"
-                  details="{{ i18n "details" }}"></fde-course>
+                  details="{{ i18n "details" }}"
+                  register="{{ if isset $pp "registration" }}{{ i18n "register_now" }}{{ end }}"
+                  ></fde-course>
 
     {{ end }}
     </featured-courses>

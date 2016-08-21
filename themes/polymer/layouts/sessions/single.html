@@ -28,57 +28,68 @@
 
   {{ .Content }}
 
-  This course is offered in {{ i18n (printf "language_%s" $.Site.CurrentLanguage) }} and starts <strong>{{ $p.session.start_date }}</strong>.
+  {{ printf (i18n "course_offered_and_starts") (i18n (printf "language_%s" $.Site.CurrentLanguage)) }} <strong>{{ $p.session.start_date }}</strong>.
 
-  <h3>Course schedule</h3>
+  <h3>{{ i18n "course_schedule" }}</h3>
 
   {{ partial "schedule.html" . }}
 
-  <h3>Time</h3>
+  <h3>{{ i18n "hourly_time" }}</h3>
 
   <p>{{ $p.time.from }} &mdash; {{ $p.time.to }}</p>
 
-  <h3>Where</h3>
+  <h3>{{ i18n "venue" }}</h3>
 
   <p>
+  </p>
+
+<google-map longitude="{{ $p.venue.longitude }}"
+            latitude="{{ $p.venue.latitude }}"
+            zoom="{{ $p.venue.zoom }}"
+            language="{{ .Site.CurrentLanguage }}" style="height: 450px;"
+            disable-zoom="true">
+  <google-map-marker longitude="{{ $p.venue.longitude }}" latitude="{{ $p.venue.latitude }}"
+                     title="{{ $p.venue.name }}" draggable="true">
     <address>
       <a href="{{ $p.venue.map_link }}">{{ $p.venue.name }}</a>
       {{ $p.venue.address }}{{ if $p.venue.address2 }}
       {{ $p.venue.address2 }}{{ end }}
     </address>
-  </p>
+
+  </google-map-marker>
+</google-map>
+
+
+
 
   <!-- Insert Google Maps map -->
 {{ with $p.cost }}
-  <h3>Cost</h3>
+  <h3>{{ i18n "cost" }}</h3>
 
-  <p>{{ .amount }}$ {{ if .per_couple }}per couple{{ else }}per person{{ end }}.</p>
+  <p>{{ .amount }}$ {{ if .per_couple }}{{ i18n "per_couple" }}{{ else }}{{ i18n "per_person" }}{{ end }}.</p>
 {{ end }}
 
 {{ with $p.registration }}
-  <h3>Registration and payment</h3>
-
-  {{ if isset . "deadline" }}
-    <p>Deadline for registration: <strong>{{ .deadline }}</strong></p>
+  <h3>{{ i18n "registration_and_payment" }}</h3>
+  {{ if ne .deadline nil }}
+    <p>{{ i18n "deadline" }}: <strong>{{ .deadline }}</strong></p>
   {{ end }}
 
-  {{ if isset . "paypal_item" }}
+  {{ if ne .paypal_item nil}}
   <p>
-    Register here and then proceed to payment below.
+    {{ i18n "registration_instructions" }}
   </p>
 
-  <p>
-    <paper-button>Register now</paper-button>
-  </p>
-
-  <h4>Payment</h4>
-
-  <p>After registering, proceed to payment:</p>
-
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick" />Please <a href="http://goo.gl/forms/omc4UywiDR">register here first</a> and then proceed to payment:<br />
-<input name="hosted_button_id" type="hidden" value="{{ .paypal_item }}" /><br />
-<input alt="{{ i18n "pay_with_paypal" }}" name="submit" src="{{ i18n "pay_now" }}" type="image" /><br />
-<img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" /></form>
+  <table>
+    <tr><td>1.</td><td>
+      <a href="{{ .registration_form }}" target="_blank"><paper-button raised>{{ i18n "register_now" }}</paper-button></a>
+    </td></tr><tr><td>2.</td><td>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick" />
+        <input name="hosted_button_id" type="hidden" value="{{ .paypal_item }}" /><br />
+        <input alt="{{ i18n "pay_with_paypal" }}" name="submit" src="{{ i18n "pay_now" }}" type="image" /><br />
+        <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" /></form>
+    </td></tr>
+  </table>
 
   {{ end }}
 

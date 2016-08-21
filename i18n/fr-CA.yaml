@@ -66,3 +66,25 @@
   translation: "Rencontre en sous-groupes, cas {{.num }}, avant la plénière suivante"
 - id: schedule_plenary_note
   translation: "Les rencontres en sous-groupes ont lieux chez les participants à une date convenue avec le groupe. Nous suggérons 1 à 2 semaines avant la plénière."
+- id: course_schedule
+  translation: "Horaire des cours"
+- id: hourly_time
+  translation: "Heure"
+- id: venue
+  translation: "Lieu"
+- id: cost
+  translation: "Coût"
+- id: per_couple
+  translation: "par couple"
+- id: per_person
+  translation: "par personne"
+- id: registration_and_payment
+  translation: "Inscription et paiement"
+- id: deadline
+  translation: "Date limite"
+- id: registration_instructions
+  translation: "Inscrivez-vous d'abord, puis payez ci-après ensuite. Si vous préférez d'autres modalités de paiements, contactez-nous après votre inscription. Nous trouverons une manière de vous accomoder."
+- id: register_now
+  translation: "S'inscrire"
+- id: course_offered_and_starts
+  translation: "Ce cours est offert en %s et débute le"
