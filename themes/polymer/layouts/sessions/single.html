@@ -47,7 +47,8 @@
             latitude="{{ $p.venue.latitude }}"
             zoom="{{ $p.venue.zoom }}"
             language="{{ .Site.CurrentLanguage }}" style="height: 450px;"
-            disable-zoom="true">
+            disable-zoom="true"
+            api-key="AIzaSyAAhXurUtig-L2BqZE-BS5hWLXBxcsqi5A">
   <google-map-marker longitude="{{ $p.venue.longitude }}" latitude="{{ $p.venue.latitude }}"
                      title="{{ $p.venue.name }}" draggable="true">
     <address>
