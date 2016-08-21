@@ -36,7 +36,6 @@ In each step of the application, emphasis is given to:
    cause has been ideally identified by the group.
 
 
-
 ### The application of the method
 
 In the context of IFFD courses, the method is applied as follows:
