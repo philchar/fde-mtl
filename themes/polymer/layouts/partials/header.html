@@ -197,6 +197,11 @@
        font-size: 16px;
        padding-bottom: 8px;
    }
+   .home-icon {
+       --iron-icon-height: 20px;
+       --iron-icon-width: 20px;
+       vertical-align: bottom;
+   }
    .author{
        font-size: 16px;
        padding-left: 20px;
@@ -250,7 +255,7 @@
     #offered-courses {
         margin-bottom: 2px;
     }
-  }
+   }
   </style>
 
 </head>
@@ -289,6 +294,11 @@
 
 
         <div class="menus">
+
+            <a href="{{$baseurl}}/{{$lang}}"><paper-button>
+                <iron-icon icon="home" class="home-icon"></iron-icon> {{ i18n "home" }}
+            </paper-button></a>
+
 
           {{ range .Site.Menus.main }}
             <a href="{{ .URL }}"><paper-button>{{ if .Post }}{{ .Post }}{{else}}{{ .Name }}{{end}}</paper-button></a>
