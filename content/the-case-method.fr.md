@@ -25,7 +25,12 @@ Dans chaque étape de l'application de la méthode, l'accent est mis sur:
 
 1. **Faits**: événements, affirmations ou situations dans l'étude de cas où **tous les participants sont d'accord**. Ce ne sont pas des interprétations, des causes présumées ou possibles… Ce sont des *faits évidents*.
 
-2. **Problèmes**: événements, affirmations ou situations dans l'étude de cas qui sont des difficultés non résolues dans le texte. Les faits tendent à pointer vers des problèmes qui ne sont pas toujours en surface dans le cas. Les problèmes **spécifiques** de la vie matrimoniale, parentale ou dans les relations extra-familiales ont des **causes premières** qui doivent être mises en lumières pendant la discussion en réunions d'équipes et en sessions générales.
+2. **Problèmes**: difficultés non résolues dans le texte. Les faits tendent à
+   pointer vers des problèmes qui ne sont pas toujours en surface dans le
+   cas. Les problèmes **spécifiques** de la vie matrimoniale, parentale ou dans
+   les relations extra-familiales ont des **causes premières** qui doivent être
+   mises en lumières pendant la discussion en réunions d'équipes et en sessions
+   générales.
 
 3. **Solutions**: les solutions doivent être **tangibles**, aussi **pratiques** que les faits dont ils sont issus et doivent adresser un problème spécifique, idéalement sa cause première identifiée par le groupe.
 

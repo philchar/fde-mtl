@@ -35,7 +35,7 @@ time:
   from: "19h30"
   to: "22h00"
 cost:
-  amount: 150
+  amount: 125
   per_couple: true
 #registration:
 #  registration_form:

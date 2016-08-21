@@ -9,42 +9,41 @@ menu:
 
 ---
 
-### Faits / Problèmes / Solutions
+### Facts / Problems / Solutions
 
-The [Case method](https://en.wikipedia.org/wiki/Case_method) was developed at
-the Harvard Business School at the end of the 18th century and is widely used in
-medical, business administration and law schools.
+The [Case Method](https://en.wikipedia.org/wiki/Case_method) was developed at
+the Harvard Business School at the end of the 18th century and is now widely used in
+business administration, law and medical schools.
 
 {{< youtube eA5R41F7d9Q >}}
 
-The IFFD applied this method to the challenges of communication in the couple
-and the family.
+The International Federation for Family Development (IFFD) applied this method
+to the challenges of communication in the couple and family.
 
 In each step of the application, emphasis is given to:
 
-1. **Facts**: events, affirmations or situations inside the case, on which **all
-   participants agree**.  They are not interpretations, presumed or plausible
-   causes. They are **obvious facts**.
+1. **Facts**: events, assertions or situations of the case study, on which **all
+   participants agree**.  These are not interpretations, presumed or plausible
+   causes, rather **obvious facts**.
 
-2. **Problems**: events, affirmations or situations in the case which are not
-   resolved by the case at hand.  Facts tend to point to problems that do not
-   always surface directly in the case.  **Specific** problems of the family
-   life have **root causes** which need to be brought to light during
-   discussions in small groups and plenary sessions.
+2. **Problems**: unresolved difficulties in the text.  Facts tend to point to
+   problems that do not always emerge directly from the description of the case.
+   **Specific** problems of family life have **root causes** which should be
+   identified during discussions in small groups and plenary sessions.
 
-3. **Solutions**: they should be **tangibles**, as **practical** as the facts
-   from which they stem, and must address a specific problem, ideally its root
-   cause identified by the group.
+3. **Solutions**: they should be **tangible**, as **practical** as the facts
+   from which they stem, and must address a specific problem, whose root
+   cause has been ideally identified by the group.
 
 
 
 ### The application of the method
 
-In the context of IFFD courses, the method is applied as such:
+In the context of IFFD courses, the method is applied as follows:
 
-1. Each participants reads the case.
+1. Each participant reads the case on his/her own.
 2. Each couple discusses the case together.
-3. Each small group meet somewhere (at some participant's home if possible) to discuss the case.
-4. All participants gather in the plenary session -- moderated by an expert -- to discuss the case further, exchange on the visions each one has and find more and better solutions.
+3. Each small group (4 to 5 couples) meets (at some participant's home if possible) to discuss the case.
+4. All participants gather in the plenary session -- moderated by an expert -- to further discuss the case, exchange each other's insight and identify more constructive solutions.
 
-The systematic work, the application of the method in everyday life is what transformed the life of more than 25 000 couples throughout the world already.
+This systematic approach and its application in everyday life have so far transformed the life of more than 25 000 couples throughout the world.
