@@ -10,7 +10,5 @@ menu:
 
 Vous pouvez nous joindre par courriel à l'adresse <a href="mailto:info@fde-mtl.ca">info@fde-mtl.ca</a>.
 
-[[ INSÉRER LE LIEN VERS LA PAGE FACEBOOK ]]
-
 Vous pouvez aussi nous joindre via les média sociaux, affichés dans le bas de
 cette page.

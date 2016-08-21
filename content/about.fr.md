@@ -31,10 +31,13 @@ http://www.familydevelopment.ca/mission/
 
 Le conseil d'administration est composé de:
 
-* Frédérick Gaudreau & Valérie Blouin
-* Philippe Charron & Marie-Pierre Gagné
-* Elie Bou-Assi & Mélina Daher
+* Bridget Bagshaw & Karl Santaguida
+* Marie-Pierre Gagné & Philippe Charron
+* Mélina Daher & Elie Bou-Assi
 * Michelle Chartrand & Alexandre Bourget
+* Sara de la Cerda & Jose Coronado
+* Theresa Neurohr-Pasini & Damiano Pasini
+* Valérie Blouin & Frédérick Gaudreau
 
 Vous pouvez nous joindre à l'adresse <a
-href="mailto:board@fde-mtl.org">board@fde-mtl.ca</a>.
+href="mailto:info@fde-mtl.org">info@fde-mtl.ca</a>.

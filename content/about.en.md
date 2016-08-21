@@ -32,11 +32,12 @@ http://www.familydevelopment.ca/mission/
 
 The current board members are:
 
-* Frédérick Gaudreau & Valérie Blouin
-* Philippe Charron & Marie-Pierre Gagné
-* Elie Bou-Assi & Mélina Daher
+* Bridget Bagshaw & Karl Santaguida
+* Marie-Pierre Gagné & Philippe Charron
+* Mélina Daher & Elie Bou-Assi
 * Michelle Chartrand & Alexandre Bourget
+* Sara de la Cerda & Jose Coronado
+* Theresa Neurohr-Pasini & Damiano Pasini
+* Valérie Blouin & Frédérick Gaudreau
 
-
-The team can be reached at <a
-href="mailto:board@fde-mtl.org">board@fde-mtl.ca</a>.
+For any information, reach us at <a href="mailto:info@fde-mtl.ca">info@fde-mtl.ca</a>.

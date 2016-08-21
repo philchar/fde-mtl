@@ -50,7 +50,7 @@
   <template>
     <paper-card class="session">
       <div class="header">
-        <iron-image src="/images/courses/{{ image }}" sizing="cover">
+        <a href="{{permalink}}"><iron-image src="/images/courses/{{ image }}" sizing="cover"></iron-image></a>
       </div>
       <div class="card-content">
         <span hidden$="{{!past}}" class="past">{{past}}</span>
@@ -58,12 +58,16 @@
 
         <paper-icon-item class="location">
           <iron-icon icon="communication:location-on" item-icon></iron-icon>
-          <p class="venue"><a target="_blank" href="{{ mapslink }}">{{ venue }}</a></p>
+          <paper-item-body>
+            <div class="venue"><a target="_blank" href="{{ mapslink }}">{{ venue }}</a></div>
+          </paper-item-body>
         </paper-icon-item>
 
         <paper-icon-item class="start-date">
           <iron-icon icon="icons:event" item-icon></iron-icon>
-          <p>{{ i18n "starts" }} {{ startdate }}</p>
+          <paper-item-body>
+            <div>{{ i18n "starts" }} {{ capitalizeFirst(startdate) }}</div>
+          </paper-item-body>
         </paper-icon-item>
       </div>
 
@@ -95,6 +99,9 @@
         value: ""
       }
     },
+    capitalizeFirst: function(input) {
+      return input.charAt(0).toUpperCase() + input.slice(1);
+    }
   });
   </script>
 </dom-module>
