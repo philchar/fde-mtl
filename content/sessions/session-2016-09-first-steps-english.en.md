@@ -37,15 +37,31 @@ time:
 #cost:
 #  amount: 125
 #  per_couple: true
-#registration:
-#  registration_form:
-#  deadline: "Monday, January 5th 2016"
-#  paypal_item: "NLL5P7YY8JU74"
+registration:
+  registration_form: "https://docs.google.com/forms/d/e/1FAIpQLSfnwaEJuYes8yiOHPLUst34BlbIaKcWXSSlN3g0AhKaUXLexw/viewform"
+  deadline: "Friday, September 23rd 2016"
+  _paypal_item: ""
 ---
 
-Matrimonial Love is a course developed by professionals at IFFD (International
-Federation for Family Development) that uses the Harvard case study method to
-explore issues facing couples and their families. The course provides couples
-with practical knowledge and skills for an enriched married life.
+Starting September 23rd 2016, FDE Montreal (previously Projet Famille and Family Enrichment Montreal) offers the **First Steps** course in Montreal.
+
+This course is for parents with children from birth to 3 years old and couples planning to become parents.
+
+Many studies show that adequate early stimulation is the most efficient tool to obtain a complete personal development, in the field of intelligence, psychomotor activity and behavior.
+
+This course will help you discover the main pedagogical frameworks and the basic habits that infants should acquire.
+
+Topics may include:
+
+* Introduction to the program
+* Key aspects of child development
+* The family environment
+* Heredity and temperament
+* Communication within marriage
+* Siblings
+* The role of play in the life of a child
+* Nursery and preschools
+* Will and discipline
+* Training in sensitivity and the virtues
 
 <!--more-->
