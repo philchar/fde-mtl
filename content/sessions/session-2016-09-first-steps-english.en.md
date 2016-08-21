@@ -9,8 +9,8 @@ session:
 venue:
   name: "McGill University, MacDonald Engineering building"
   address: "Corner Milton & University, Montreal"
-  latitude: 45.5056501
-  longitude: -73.5773285
+  latitude: 45.5047847
+  longitude: -73.5771511
   map_link: https://goo.gl/maps/wjhcMzurjfR2
   zoom: 17
 schedule:
