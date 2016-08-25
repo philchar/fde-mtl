@@ -37,7 +37,6 @@ The current board members are:
 * Mélina Daher & Elie Bou-Assi
 * Michelle Chartrand & Alexandre Bourget
 * Sara de la Cerda & Jose Coronado
-* Theresa Neurohr-Pasini & Damiano Pasini
 * Valérie Blouin & Frédérick Gaudreau
 
 For any information, reach us at <a href="mailto:info@fde-mtl.ca">info@fde-mtl.ca</a>.

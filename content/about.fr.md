@@ -36,7 +36,6 @@ Le conseil d'administration est composé de:
 * Mélina Daher & Elie Bou-Assi
 * Michelle Chartrand & Alexandre Bourget
 * Sara de la Cerda & Jose Coronado
-* Theresa Neurohr-Pasini & Damiano Pasini
 * Valérie Blouin & Frédérick Gaudreau
 
 Vous pouvez nous joindre à l'adresse <a
