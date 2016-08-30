@@ -15,7 +15,7 @@
     <meta property="og:image" content="{{ . }}" />
   {{ end }}{{ end }}
   {{ with .Params.session.course_image }}
-    <meta property="og:image" content="/images/courses/{{ . }}" />
+    <meta property="og:image" content="{{ $baseurl }}/images/courses/{{ . }}" />
   {{ end }}
   <script src="{{$baseurl}}/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
   <link rel="stylesheet" href="{{$baseurl}}/technology/technology.css">
